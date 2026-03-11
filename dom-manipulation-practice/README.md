@@ -8,6 +8,7 @@ Each exercise is organized in its own folder with separate HTML, CSS, and JavaSc
 1. `dark-mode-toggle` - Toggle between dark mode and light mode.
 2. `image-generator` - Generate images with a loading spinner.
 3. `image-switch` - Click an image to switch to the next one.
+4. `joke-generator` - Fetch and display random jokes from an external API.
 
 ## Technologies Used
 
@@ -31,6 +32,10 @@ dom-manipulation-practice/
 |   |-- index.html
 |   |-- style.css
 |   `-- script.js
+|-- joke-generator/
+|   |-- index.html
+|   |-- style.css
+|   `-- script.js
 |-- images/
 |   |-- pic1.jpg
 |   |-- pic2.jpg
@@ -50,10 +55,12 @@ dom-manipulation-practice/
 - [Dark Mode Toggle](./dark-mode-toggle/index.html)
 - [Image Generator](./image-generator/index.html)
 - [Image Switch](./image-switch/index.html)
+- [Joke Generator](./joke-generator/index.html)
 
 ## Live Demo Links
 
 - [Dark Mode Toggle Live](https://adambraija.github.io/dom-manipulation-practice/dark-mode-toggle/)
 - [Image Generator Live](https://adambraija.github.io/dom-manipulation-practice/image-generator/)
 - [Image Switch Live](https://adambraija.github.io/dom-manipulation-practice/image-switch/)
+- [Joke Generator Live](https://adambraija.github.io/dom-manipulation-practice/joke-generator/)
 
