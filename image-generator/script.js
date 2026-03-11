@@ -1,6 +1,6 @@
 const button = document.getElementById("btn");
 const container = document.getElementById("container");
-const pictures = ["./images/pic1.jpg", "./images/pic2.jpg", "./images/pic3.jpg"];
+const pictures = ["../images/pic1.jpg", "../images/pic2.jpg", "../images/pic3.jpg"];
 let currentIndex = 0;
 button.addEventListener("click", () => {
   container.innerHTML = "<span class='loading'></span>";
