@@ -1,20 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Dark Mode Toggle</title>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
-    <style>
-        body.dark-mode {
-            background-color: black;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Practice</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      color: #666;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .exercise-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .exercise-card {
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .exercise-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .exercise-card h2 {
+      color: #667eea;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .exercise-card p {
+      color: #555;
+      font-size: 13px;
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .exercise-card a {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 13px;
+      transition: background 0.3s;
+    }
+
+    .exercise-card a:hover {
+      background: #764ba2;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+      color: #888;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Dark Mode Toggle</h1>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <div class="container">
+    <h1>DOM Manipulation Practice</h1>
+    <p>A collection of beginner JavaScript exercises</p>
+
+    <div class="exercise-list">
+      <div class="exercise-card">
+        <h2>🌙 Dark Mode Toggle</h2>
+        <p>Toggle between dark mode and light mode with a single click.</p>
+        <a href="./dark-mode-toggle/index.html">Open Exercise</a>
+      </div>
+
+      <div class="exercise-card">
+        <h2>🖼️ Image Generator</h2>
+        <p>Generate images with a loading spinner animation.</p>
+        <a href="./image-generator/index.html">Open Exercise</a>
+      </div>
+
+      <div class="exercise-card">
+        <h2>🔄 Image Switch</h2>
+        <p>Click an image to switch to the next one in the gallery.</p>
+        <a href="./image-switch/index.html">Open Exercise</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with ❤️ for learning JavaScript DOM manipulation</p>
+    </footer>
+  </div>
 </body>
 </html>
